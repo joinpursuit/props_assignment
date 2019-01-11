@@ -4,8 +4,8 @@ const Post = props => {
   const { id, title, body } = props;
   return (
     <section id={id}>
-      <h3>{title}</h3>
-      <p>{body}</p>
+      <h3>Title: {title}</h3>
+      <p>Body: {body}</p>
     </section>
   );
 };
