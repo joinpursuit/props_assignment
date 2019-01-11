@@ -1,0 +1,35 @@
+body {
+  margin:0px;
+  background-color:#cadcf7;
+}
+
+.App {
+  text-align: center;
+  width:1000px;
+  display: flex;
+  margin:auto;
+
+
+}
+
+h3 {
+  font-family: 'Great Vibes', cursive;
+  color: black;
+  /* -webkit-text-stroke-width: 1px; */
+   /* -webkit-text-stroke-color: pink; */
+   font-size: 40px;
+}
+
+p {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+section {
+  border-style: outset;
+  border-radius: 7px;
+  background-image: radial-gradient(#f7f0d4,#f4ce9c);
+
+  margin:10px;
+  padding:25px;
+}
