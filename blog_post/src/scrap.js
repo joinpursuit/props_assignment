@@ -5,7 +5,7 @@ import React from 'react'
 import './blog_posts.json'
 import { Feed } from './feed.js'
 
-class Apps extends React.Component {
+class Posts extends React.Component {
   constructor () {
     super()
     this.state = {
@@ -50,14 +50,14 @@ class Apps extends React.Component {
 
 }
 
-export default Apps
+export default Posts
 
 
 // <Feed
 // allPosts={this.state.allPosts} />
 
 ///--------------------
-end of apps.js
+end of Posts.js
 ///-------------------
 
 import React from 'react'
@@ -65,7 +65,7 @@ import './blog_posts.json'
 import { Feed } from './feed.js'
 // import blog from './blog_posts.json'
 
-class Apps extends React.Component {
+class Posts extends React.Component {
   constructor () {
     super()
     this.state = {
@@ -111,11 +111,11 @@ class Apps extends React.Component {
 
 }
 
-export default Apps
+export default Posts
 
 
 // <Feed
 // allPosts={this.state.allPosts} />
 //-------------
-apps.js again
+Posts.js again
 ///--------------
