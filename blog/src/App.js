@@ -13,6 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>A Pirate's Blog</h1>
         <Feed allPosts={this.state.allPosts}/>
       </div>
     );
