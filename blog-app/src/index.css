@@ -12,3 +12,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+*{
+  background-color: azure;
+}
+
+#root{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#root  div{
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+form .title{
+  height: 20px;
+  width: 400px;
+}
+
+form .body{
+  height: 200px;
+  width: 500px
+}
+
+form{
+/* display: flex; */
+/* background-color: rgb(179, 48, 48); */
+/* grid-template-columns: 1fr 400px 1fr; */
+
+
+}
+
+div h1{
+grid-column-start: 2;
+}

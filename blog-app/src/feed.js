@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import PostForms from "../src/postForms.js"
 import Post from "../src/post.js"
 
 class Feed extends Component {
   constructor(props){
     super(props)
   }
+
+
 
   listings = (props) => {
     const {allPosts} = this.props
@@ -23,8 +26,12 @@ class Feed extends Component {
   }
   
   render() {
+   console.log("Feed:" + this.props)
     return (
-      <div>{this.listings()}</div>
+      <div>
+      <PostForms props = {this.props}/>
+      {this.listings()}
+      </div>
     );
   }
 }
