@@ -1,13 +1,18 @@
 import React from "react";
 
-const Post = props => {
-  let { title, body, id } = props.eachPost;
+const Post = ({ eachPost: { title, body, id }, deletePost }) => {
+  // let { title, body, id } = props.eachPost;
   return (
-    <section id={id}>
-      <h1>Post {id}</h1>
+    <div className="single-post" id={id}>
       <h3>{title}</h3>
       <p>{body}</p>
-    </section>
+      <span id="hidden">
+        <p id="post-id">Post ID: {id}</p>
+        <button id="delete-button" onClick={() => deletePost(id)}>
+          Delete Post
+        </button>
+      </span>
+    </div>
   );
 };
 
