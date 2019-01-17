@@ -39,12 +39,16 @@ div span {
   font-size: 40px;
   font-weight: bold;
 }
-/*
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
+/* form */
+div#form {
+  display: flex;
+  flex-direction: row;
+}
+input#body {
+  width: 400px;
+}
+
+em {
+  color: brown;
+}
