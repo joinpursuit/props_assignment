@@ -1,0 +1,121 @@
+
+body {
+  background: #C9FFBF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.main {
+  text-align: center;
+  max-width: 600px;
+  min-width: 400px;
+  margin: auto;
+}
+
+/* .single-post {
+  display:
+} */
+
+h1 {
+  color: #00ace6;
+  font-family: Pacifico;
+}
+
+h3 {
+  color: #002266;
+  font-family: Righteous;
+}
+
+p {
+  color: #002b80;
+  font-family: Exo;
+}
+
+.input-area {
+  text-align: right;
+  margin-left: 0;
+}
+
+.input-area > * {
+  border-color: #00ace6;
+  font-family: Exo;
+  font-size: 15px;
+  display: block;
+  margin: auto;
+  background: transparent;
+  border: 2px solid #00ace6;
+  width: 80%;
+  outline: none;
+}
+
+::placeholder{
+  color: #29a3a3;
+}
+
+#alert {
+  color: red;
+}
+
+#body {
+  padding-left: 4px;
+  border-radius: 4px;
+  padding-top: 4px;
+  margin-top: 10px;
+  height: 200px;
+  outline: none;
+
+}
+
+#title {
+  border-radius: 5px;
+  padding-left: 4px;
+  outline: none;
+}
+
+#post-id {
+  margin-bottom: 0px;
+}
+
+#add-post {
+background-color: #00ace6;
+border-radius: 4px;
+margin-top: 5px;
+border: none;
+width: 50%;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
+outline: none;
+}
+
+#delete-button {
+  background-color: #ff6666;
+  border-radius: 3px;
+  margin-top: 4px;
+  border: none;
+  width: 30%;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+}
+
+#hidden {
+  display: none;
+}
+
+.single-post:hover #hidden {
+  display: block;
+}
+
+li.remove:hover button {
+  width: 45px;
+ opacity: 1;
+}
