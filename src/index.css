@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
