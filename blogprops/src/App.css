@@ -30,3 +30,12 @@
     transform: rotate(360deg);
   }
 }
+
+.mainPosts{
+  background-color: lightblue;
+  text-align: center;
+}
+.postTitleStyle{
+  font-family: Helvetica;
+
+}

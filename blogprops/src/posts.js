@@ -9,9 +9,8 @@ const Posts = ({eachpost: {id,title,body}}) => {
 
 return(
   <>
-  <div>
-  <h3>Title: {title}</h3>
-  <br />
+  <div className="mainPosts">
+  <h3 className="postTitleStyle">{title}</h3>
   <p>Body:
     <br />
     {body}</p>
