@@ -1,17 +1,43 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import { Feed } from './components/Feed.js'
+import blog_posts from './blog_posts.json'
 
-import MyApp from './MyApp.js'
+class App extends React.Component {
+  constructor () {
+    super()
+    this.state = {
+      allPosts: [],
+    }
+    // debugger
+  }
+
+  getBlogPosts = () => {
+      this.setState({
+        allPosts: blog_posts,
+      }) // debugger
+  }
 
 
-class App extends Component {
   render() {
+// debugger
+    let posts = this.state.allPosts.map(post => {
+      return (
+        <Feed key={post.id} id={post.id} title={post.title} body={post.body} />
+      )
+    })
+
     return (
-      <div className="App">
-        <MyApp />
+      <div className='App'>
+        <button onClick={this.getBlogPosts}> Get Posts </button>
+        {posts}
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
+
+
+// <Feed
+// allPosts={this.state.allPosts} />
