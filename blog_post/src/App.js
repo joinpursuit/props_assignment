@@ -23,7 +23,7 @@ class App extends React.Component {
 // debugger
     let posts = this.state.allPosts.map(post => {
       return (
-        <Feed key={post.id} id={post.id} title={post.title} body={post.body} />
+        <Feed key={post.id} allPosts={post} id={post.id} title={post.title} body={post.body} />
       )
     })
 
@@ -41,3 +41,21 @@ export default App
 
 // <Feed
 // allPosts={this.state.allPosts} />
+
+//======
+
+// render() {
+// // debugger
+//   let posts = this.state.allPosts.map(post => {
+//     return (
+//       <Feed key={post.id} allPosts={post} id={post.id} title={post.title} body={post.body} />
+//     )
+//   })
+//
+//   return (
+//     <div className='App'>
+//       <button onClick={this.getBlogPosts}> Get Posts </button>
+//       {posts}
+//     </div>
+//   )
+// }

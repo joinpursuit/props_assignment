@@ -1,11 +1,17 @@
 import React from 'react'
 
-export const Feed = ({id, title, body}) => {
+export const Feed = (props) => {
+  console.log(props.allPosts);
   return (
-    <div>
-      Id: {id}    <br/>
-      Title: {title}    <br/>
-      Body: {body}
-    </div>
+    <div></div>
   )
 }
+
+
+// <div>
+// {props.id}  <br/>
+// {props.allPosts.id} {' - '}
+// {props.allPosts.title} {' - '}
+// {props.allPosts.body}
+// {/* {props.allPosts} */}
+// </div>
