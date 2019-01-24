@@ -2,8 +2,9 @@ import React from 'react'
 
 export const Post = (props) => {
   return (
-    <div>
-      <h1> Post </h1>
-    </div>
+    <section id={props.post.id}>
+      <h3> {props.post.title} </h3>
+      <p> {props.post.body} </p>
+    </section>
   )
 }

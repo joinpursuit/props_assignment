@@ -7,31 +7,16 @@ class App extends React.Component {
   constructor () {
     super()
     this.state = {
-      allPosts: [],
+      allPosts: blog_posts,
     }
     // debugger
   }
 
-  getBlogPosts = () => {
-      this.setState({
-        allPosts: blog_posts,
-      }) // debugger
-  }
-
 
   render() {
-// debugger
-    let posts = this.state.allPosts.map(post => {
-      return (
-        <Feed key={post.id} allPosts={post} id={post.id} title={post.title} body={post.body} />
-      )
-    })
-
     return (
       <div className='App'>
-      
-        <button onClick={this.getBlogPosts}> Get Posts </button>
-        {posts}
+        <Feed allPosts={this.state.allPosts} />
       </div>
     )
   }

@@ -1,9 +1,17 @@
 import React from 'react'
+import { Post } from './Post'
 
 export const Feed = (props) => {
   console.log(props.allPosts);
+
+  let allPosts = props.allPosts.map(eachPost => {
+    return <Post key={eachPost.id} post={eachPost}/>
+  })
+
   return (
-    <div></div>
+    <div>
+      {allPosts}
+    </div>
   )
 }
 
