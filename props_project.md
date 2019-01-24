@@ -1,3 +1,5 @@
+referred to (notesJS+HTML/class01172019-react-todos-1) for clarification.
+
 # Create a Blog
 
 A blog is a great example of how props might make our life easier, because it includes a repeated pattern with differing content- the blog posts themselves.
