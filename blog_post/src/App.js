@@ -29,6 +29,7 @@ class App extends React.Component {
 
     return (
       <div className='App'>
+      
         <button onClick={this.getBlogPosts}> Get Posts </button>
         {posts}
       </div>
